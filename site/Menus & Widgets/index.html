@@ -1,0 +1,574 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Interaction/">
+      
+      
+        <link rel="next" href="../Saving/">
+      
+      
+      <link rel="icon" href="../img/PageLogo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Menus & Widgets - Arsenic Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#menus-widgets" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Arsenic Documentation" class="md-header__button md-logo" aria-label="Arsenic Documentation" data-md-component="logo">
+      
+  <img src="../img/PageLogo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Arsenic Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Menus &amp; Widgets
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Arsenic Documentation" class="md-nav__button md-logo" aria-label="Arsenic Documentation" data-md-component="logo">
+      
+  <img src="../img/PageLogo.png" alt="logo">
+
+    </a>
+    Arsenic Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Doors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Doors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GAS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GAS &amp; Attributes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Interaction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interaction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Menus &amp; Widgets
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Menus &amp; Widgets
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Focus
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Saving/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Saving &amp; Loading
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Focus
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="menus-widgets">Menus &amp; Widgets</h1>
+<p>This document will cover the most important things to know about how the widget system is set up, and how you can best utilize the tools and functions within.</p>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>There exists a class called <code>UMainWidget</code>. This widget is on screen permanently and is the base from which all other widgets are added and shown. As such, 
+<code>AArsenicPlayerController</code> has a reference to this widget so we can access its functions at any time from anywhere. The various functions that live on this 
+widget help with adding and removing widgets to/from the screen, setting input modes, and handling the mouse cursor. Most of that is handled automatically 
+when you call <code>PushWidgetToTargetStack</code>. The main widget has 4 stacks that you can push menus to: </p>
+<ul>
+<li><code>HUD_Stack</code> (which is pretty much used only once to add the 
+HUD), </li>
+<li><code>InteractableHUD_Stack</code> (for drag and drop inventories and such), </li>
+<li><code>Menu_Stack</code> (for menus like a pause menu or settings menu), and the </li>
+<li><code>Popup_Stack</code> (for context widgets). </li>
+</ul>
+<blockquote>
+<p>For more details, go to <code>UI-&gt;Widgets-&gt;MainWidget.h</code></p>
+</blockquote>
+<p>The <code>Common UI</code> plugin has also been set up to detect which input device is being used, and <code>UCommonActionWidgets</code> set input icons automatically based on those 
+input types. Conveniently, I've created a <code>UBottomNavBarBase</code> class that can be added to any <code>UArsenicMenuBase</code> (important, it MUST be <code>UArsenicMenuBase</code>) that 
+contains a button that will handle closing the current widget. It works like you'd expect a back button to.</p>
+<p><img alt="WB_NavBarBase Image" src="../img/Menus%20And%20Widgets/bottom%20nav%20bar.png" /></p>
+<hr />
+<h2 id="input">Input</h2>
+<p>When a menu is opened, we must call <code>SwitchToMenuInput()</code> on the <code>ArsenicPlayerController</code>. This removes the <strong>Gameplay</strong> Input Mapping Context which moves the character, 
+and replaces it with the <strong>Menu</strong> Input Mapping Context which helps with navigating menus. When <code>MainWidget</code> no longer has any widgets pushed, it broadcasts <code>OnStacksCleared</code>
+which the <code>PlayerController</code> responds to by calling <code>SwitchToGameplayInput()</code>. UI inputs are in <code>_GAME-&gt;UI-&gt;Input-&gt;InputActions</code>, and gameplay inputs are in 
+<code>_GAME-&gt;Blueprints-&gt;Player-&gt;Input-&gt;InputActions</code></p>
+<p>Widgets can't (and won't) behave as expected when using traditional Input Actions directly in the widget because of a bug in the engine version we're using. Instead, menus 
+have to respond to input by responding to delegates broadcast by the <code>ArsenicPlayerController</code>. For example, to tab left or tab right, the <code>ArsenicPlayerController</code> broadcasts 
+that one of those inputs has been pressed. Then, the <code>Settings</code> menu responds by changing the widget index. Callbacks are set up in blueprint so we can access various widget 
+components more easily, but the broadcasts themselves are handled in C++ by the <code>ArsenicPlayerController</code>. </p>
+<p><img alt="WB_SettingsMenu Binding to delegates" src="../img/Menus%20And%20Widgets/BindingToDelegates.png" /></p>
+<p><code>Common UI</code> supports global back actions, and our menu system makes great use of them. If you're creating a menu that you'll want to close by simply pressing <code>B</code> on controller or <code>ESC</code>,
+inherit from <code>UArsenicMenuBase</code>. This automatically responds to back actions, but requires that <code>IsModal</code> and <code>IsBackHandler</code> are set to <code>true</code>. You can find these bools in the widget's 
+details panel. When you inherit from <code>UArsenicMenuBase</code>, you can also add a <code>UBottomNavBarBase</code> widget to add a clickable back button and navigation icons that change based on the current 
+input device. </p>
+<p><img alt="IsBackHandler and IsModal bools" src="../img/Menus%20And%20Widgets/IsBackHandler.png" /></p>
+<hr />
+<h2 id="focus">Focus</h2>
+<p><code>Focus</code> is used to allow controllers to navigate menus, and is also one of the strongest points of frustration in UMG. We will be dealing with this for the duration of the project, so make 
+sure you follow these steps to minimize frustration and maximize functionality.
+In the details panel of your widget blueprint:</p>
+<ul>
+<li>Set <code>IsFocusable</code> to <code>true</code>, and ensure the <code>DesiredFocusWidget</code> is set to <code>self</code> (or a button depending on your menu)</li>
+<li><code>Supports Activation Focus</code> should be <code>true</code>, and depending on your menu, <code>Auto Restore Focus</code> should be <code>true</code> as well but is not required.</li>
+<li>Ensure the <code>Input Config</code> is set to <code>Game and Menu</code> and that <code>Game Mouse Capture Mode</code> is set to <code>No Capture</code>.</li>
+<li>Lastly, in the widget blueprint's event graph, override the <code>GetDesiredFocusTarget</code> function and set the return value to either <code>Self</code> or a button in your widget hierarchy. Then <code>OnActivated</code>, call 
+<code>SetFocus</code> - the target is <code>GetDesiredFocusTarget</code>. You may have to add a small delay to account for widget transition animation time. This is displayed in <code>WB_PauseMenu</code> and <code>WB_SettingsMenu</code>, with 
+the settings menu having tabbed navigation and sub-widget input logic.</li>
+</ul>
+<p><img alt="Focus details in WB_SettingsMenu" src="../img/Menus%20And%20Widgets/FocusDetails.png" /></p>
+<p><img alt="WB_SettingsMenus' OnActivated Event" src="../img/Menus%20And%20Widgets/SetFocusEvent.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

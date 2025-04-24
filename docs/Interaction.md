@@ -66,6 +66,6 @@ It has nearly identical setup as the `Simple Interact Component` as well:
 
 The component can be configured on a per-instance basis by selecting it in the details panel of the interactable object:
 
-![Component Selection](/img/Interaction/ComponentSelection.png)
+![Component Selection](img/Interaction/ComponentSelection.png)
 
 You can find an example of this in use on `BP_HingedDoor` (See Simple Interact Component for file path)

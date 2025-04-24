@@ -29,7 +29,7 @@ For optimization purposes, doors do not use collision spheres to detect when the
 
 There are some helpful debug tools set up on the player character to lock and unlock doors for testing, but I can’t promise that functionality will stick around forever:
 
-![Door Debug Tools](/img/Doors/DoorDebugFunctions.png)
+![Door Debug Tools](img/Doors/DoorDebugFunctions.png)
 
 ---
 ## AArsenicDoubleDoor

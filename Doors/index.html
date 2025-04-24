@@ -525,7 +525,7 @@
 </ul>
 <p>For optimization purposes, doors do not use collision spheres to detect when the player is nearby. Instead, every second (or half-second for sliding doors) the distance between the door and player is calculated and automatic doors will open and close when certain thresholds are met. This means that thresholds need to be <em>slightly higher</em> than expected due to the delay in distance calculations.</p>
 <p>There are some helpful debug tools set up on the player character to lock and unlock doors for testing, but I can’t promise that functionality will stick around forever:</p>
-<p><img alt="Door Debug Tools" src="/img/Doors/DoorDebugFunctions.png" /></p>
+<p><img alt="Door Debug Tools" src="../img/Doors/DoorDebugFunctions.png" /></p>
 <hr />
 <h2 id="aarsenicdoubledoor">AArsenicDoubleDoor</h2>
 <p>Because of the need for a second mesh and second open point vector, this child class was created. They should be able to just be dragged into the world and work as expected. There are many configurable variables you can set in the details panel if you want different behavior.</p>

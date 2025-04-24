@@ -1,0 +1,595 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../GAS/">
+      
+      
+        <link rel="next" href="../Menus%20%26%20Widgets/">
+      
+      
+      <link rel="icon" href="../img/PageLogo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Interaction - Arsenic Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interaction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Arsenic Documentation" class="md-header__button md-logo" aria-label="Arsenic Documentation" data-md-component="logo">
+      
+  <img src="../img/PageLogo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Arsenic Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Interaction
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Arsenic Documentation" class="md-nav__button md-logo" aria-label="Arsenic Documentation" data-md-component="logo">
+      
+  <img src="../img/PageLogo.png" alt="logo">
+
+    </a>
+    Arsenic Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Doors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Doors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GAS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GAS &amp; Attributes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Interaction
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interaction
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aarsenicinteractactorbase" class="md-nav__link">
+    <span class="md-ellipsis">
+      AArsenicInteractActorBase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#highlighting-meshes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Highlighting Meshes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-interact-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple Interact Component
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stat-interact-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stat Interact Component
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Menus%20%26%20Widgets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Menus &amp; Widgets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Saving/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Saving &amp; Loading
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aarsenicinteractactorbase" class="md-nav__link">
+    <span class="md-ellipsis">
+      AArsenicInteractActorBase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#highlighting-meshes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Highlighting Meshes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-interact-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple Interact Component
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stat-interact-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stat Interact Component
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="interaction">Interaction</h1>
+<h2 id="aarsenicinteractactorbase">AArsenicInteractActorBase</h2>
+<p>This is the class all interactable objects should inherit from as it has many useful functions, events, and variables that help inform designers and programmers of the current state of the object, along with handling mesh highlights. It comes with a few blueprint implementable events:</p>
+<ul>
+<li><code>BeginHighlight();</code> - called when the actor gets highlighted</li>
+<li><code>EndHighlight();</code> - called when the actor gets unhighlighted</li>
+<li><code>StopLookingAt();</code> - called when the player stops looking at the actor</li>
+</ul>
+<p>Additionally, it comes with a few helpful <strong>blueprint-callable</strong> functions and variables:</p>
+<ul>
+<li><code>SetAllowInteraction(bool bAllowInteraction, bool bUseHighlight);</code></li>
+<li><code>HighlightMesh();</code></li>
+<li><code>UnHighlightMesh();</code></li>
+<li><code>bool isInteractable;</code></li>
+<li><code>bool isHighlighted;</code></li>
+</ul>
+<p>It is <strong><em>very important</em></strong> to note that the <code>SceneComponent</code> and <code>StaticMesh</code> are NOT initialized in the base class and must be set in child classes if they’re to be used:</p>
+<p><img alt="Component Declaration" src="../img/Interaction/ComponentInitialization.png" /></p>
+<blockquote>
+<p>Initialize these in child classes by using <code>CreateDefaultSubobject&lt;UCLASS&gt;("COMPONENT_NAME);</code></p>
+</blockquote>
+<hr />
+<h2 id="highlighting-meshes">Highlighting Meshes</h2>
+<p>Highlighting works by using a <code>PostProcessVolume</code> with <code>InfiniteExtent</code> set to <code>true</code> and the material set to <code>PP_Highlight</code>:</p>
+<p><img alt="Post Process Settings" src="../img/Interaction/postprocessvolumesettings.png" /></p>
+<p>The highlights currently support multiple static mesh components being highlighted together, but requires that each mesh be added to the <code>HighlightMeshes</code> <strong>array</strong> in the construction script:</p>
+<p><img alt="Construction Script" src="../img/Interaction/ConstructionScript.png" /></p>
+<blockquote>
+<p>Make sure the original static mesh is added too!</p>
+</blockquote>
+<p>If the object only requires that 1 mesh be highlighted, no additional work is required to make the mesh highlight, as long as the mesh that comes with the actor has been initialized in the C++ constructor ( <code>ACLASSNAME();</code> ) and the mesh is set in blueprint.</p>
+<hr />
+<h2 id="simple-interact-component">Simple Interact Component</h2>
+<p>This actor component (created entirely in blueprint) replaces what used to be <code>SimpleInteractActors</code> to allow for much more versatility at the cost of a little extra work, but fortunately all of that is handled in blueprint and is pretty straightforward.</p>
+<p>This component comes with several functions that can be utilized by owning actors to create and remove the appropriate widget when looked at. Here’s a list of functions:</p>
+<ul>
+<li><code>CreateSimpleWidget(FText ActionText);</code> - creates the interact widget </li>
+<li><code>RemoveWidget();</code> - tries to remove the interact widget</li>
+<li><code>SetActionText(FText ActionText);</code></li>
+<li><code>SimpleLookAt(bool AllowInteraction, FText ActionText);</code> - Placed in owner LookAt functions to create references and automatically generate the widget</li>
+<li><code>ConfigureWidget(FText ActionText, FInputAction InputAction);</code> - useful for updating the interact widget while it's still on the screen</li>
+</ul>
+<p><img alt="Simple Component Setup" src="../img/Interaction/SimpleComponent.png" /></p>
+<blockquote>
+<p>The simplest implementation of the component on an interact actor. These function calls are required but can be manipulated to achieve what you want</p>
+</blockquote>
+<p>This component was designed to be implemented in classes that inherit from <code>AArsenicInteractActorBase</code>. An excellent example of this component in use is on <code>BP_HingedDoor</code>:</p>
+<p><img alt="Door Location" src="../img/Interaction/DoorLocation.png" /></p>
+<hr />
+<h2 id="stat-interact-component">Stat Interact Component</h2>
+<p>Shares almost all the same functions as the <code>Simple Interact Component</code> with some extra inputs to configure the stat interact widget, and a brand new <strong>pure</strong> function <code>bool HasEnoughAttributeValue(FGameplayAttribute AttributeToCheck);</code></p>
+<p>It has nearly identical setup as the <code>Simple Interact Component</code> as well:</p>
+<p><img alt="Stat Interact Component" src="../img/Interaction/statinteractcomponent.png" /></p>
+<p>The component can be configured on a per-instance basis by selecting it in the details panel of the interactable object:</p>
+<p><img alt="Component Selection" src="/img/Interaction/ComponentSelection.png" /></p>
+<p>You can find an example of this in use on <code>BP_HingedDoor</code> (See Simple Interact Component for file path)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
